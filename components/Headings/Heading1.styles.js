@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
-import React from 'react'
-import styled from 'styled-components'
-import { device } from '../../components/device'
+import React from 'react';
+import styled from'styled-components';
+import { device } from "../../components/device";
 
 const Heading1 = styled.h1`
   font-family: 'Architekt Daughters', cursive;
@@ -9,8 +9,8 @@ const Heading1 = styled.h1`
   text-align: center;
   padding: 1rem 1rem;
   font-size: 2rem;
-  font-weight: black;
-  -webkit-text-stroke-width: 0.1rem;
+  font-weight: black; 
+  -webkit-text-stroke-width: .1rem;
   -webkit-text-stroke-color: #ffffff;
 
   @media ${device.mobileM} {
@@ -41,5 +41,9 @@ const Heading1 = styled.h1`
   @media ${device.desktop} {
     font-size: 6rem;
   }
-`
-export { Heading1 }
+
+  
+
+
+  `
+  export { Heading1 }

@@ -1,7 +1,7 @@
-/* eslint-disable prettier/prettier */
-import react from 'react'
-import styled from 'styled-components'
-import { device } from '../device' /* eslint-disable prettier/prettier */
+  /* eslint-disable prettier/prettier */
+  import react from 'react';
+  import styled from'styled-components';
+  import { device } from "../device";/* eslint-disable prettier/prettier */
 
 const Heading3 = styled.h1`
      position: absolute;
@@ -122,4 +122,7 @@ const Heading3 = styled.h1`
   -webkit-text-stroke-color: #ffffff;
   }
   `
-export { Heading3 }
+  export { Heading3 }
+
+
+

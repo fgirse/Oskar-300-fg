@@ -1,9 +1,10 @@
-import * as React from 'react'
+/* eslint-disable prettier/prettier */
+import React from 'react'
 
-const SvgLogoNeu = (props) => (
+const SVGLogoNeu = (props) => (
   <svg
-    width="325mm"
-    height="180mm"
+    width="120px"
+    height="48px"
     viewBox="0 0 520 288"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -99,4 +100,4 @@ const SvgLogoNeu = (props) => (
   </svg>
 )
 
-export default SvgLogoNeu
+export default SVGLogoNeu

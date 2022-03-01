@@ -1,22 +1,22 @@
-import { ClientSideRowModelSteps } from 'ag-grid-community'
+import { ClientSideRowModelSteps } from "ag-grid-community";
 import Iframe from 'react-iframe'
-import React from 'react'
-import SimpleMap from './SimpleMap'
+import React from "react";
+import SimpleMap from "./SimpleMap";
+
 
 export default function Modal() {
-  const [showModal, setShowModal] = React.useState(false)
+  const [showModal, setShowModal] = React.useState(false);
   return (
     <>
-      <button
-        data-tip
-        data-for="openTip"
+      <button  data-tip data-for="openTip"
         className="bg-yellow-500 rounded-2xl font-mono border border-ring-bg-gray-200 ring-inset hover:bg-yellow-600 text-white active:red-600 font-bold uppercase sm:text- sm:px-10 lg:text-lg px-5 py-3 rounded-4lg shadow-xl shadow-gray-500 outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-        type="button"
+        type="button" 
         onClick={() => setShowModal(true)}
       >
         OpenStreet Map
-      </button>
-
+      </button >
+      
+      
       {showModal ? (
         <>
           <div
@@ -43,16 +43,8 @@ export default function Modal() {
                 {/*body*/}
                 <div className="relative w-full p-6 flex-auto">
                   <div className="w-full h-60 bg-green-400 my-4 text-blueGray-500 text-3xl leading-relaxed sm:text-md">
-                    <iframe
-                      width="270"
-                      height="270"
-                      frameBorder="5"
-                      scrolling="no"
-                      marginHeight="0"
-                      marginWidth="0"
-                      src="https://www.openstreetmap.org/export/embed.html?bbox=7.846389412879945%2C47.991591082233796%2C7.8532880544662484%2C47.99406817889533&amp;layer=cyclemap&amp;marker=47.992829645428266%2C7.849838733673096"
-                      style={{ border: '1px solid orange' }}
-                    />
+
+                  <iframe width="270" height="270" frameborder="5" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=7.846389412879945%2C47.991591082233796%2C7.8532880544662484%2C47.99406817889533&amp;layer=cyclemap&amp;marker=47.992829645428266%2C7.849838733673096" style={{border: "1px solid orange"}}/>
                   </div>
                 </div>
                 {/*footer*/}
@@ -64,6 +56,8 @@ export default function Modal() {
                   >
                     Close
                   </button>
+                  
+        
                 </div>
               </div>
             </div>
@@ -72,5 +66,5 @@ export default function Modal() {
         </>
       ) : null}
     </>
-  )
+  );
 }

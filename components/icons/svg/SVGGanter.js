@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import * as React from 'react'
 
 const SvgGanter = (props) => (
@@ -69,3 +68,4 @@ const SvgGanter = (props) => (
 )
 
 export default SvgGanter
+

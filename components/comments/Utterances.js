@@ -1,8 +1,7 @@
-/* eslint-disable prettier/prettier */
 import React, { useState, useEffect, useCallback } from 'react'
 import { useTheme } from 'next-themes'
 
-import siteMetadata from '/data/siteMetadata'
+import siteMetadata from '@/data/siteMetadata'
 
 const Utterances = ({ issueTerm }) => {
   const [enableLoadComments, setEnabledLoadComments] = useState(true)
@@ -44,9 +43,7 @@ const Utterances = ({ issueTerm }) => {
   // Added `relative` to fix a weird bug with `utterances-frame` position
   return (
     <div className="pt-6 pb-6 text-center text-gray-700 dark:text-gray-300">
-      {enableLoadComments && (
-        <button onClick={LoadComments}>Load Comments</button>
-      )}
+      {enableLoadComments && <button onClick={LoadComments}>Load Comments</button>}
       <div className="relative utterances-frame" id={COMMENTS_ID} />
     </div>
   )

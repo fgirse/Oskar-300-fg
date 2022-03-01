@@ -2,13 +2,7 @@
 import * as React from 'react'
 
 const SvgPhoneillustra = (props) => (
-  <svg
-    width="5em"
-    height="5em"
-    viewBox="0 0 210 297"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
+  <svg width="5em" height="5em" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg" {...props}>
     <path
       style={{
         fill: '#a3a3a3',
@@ -69,3 +63,4 @@ const SvgPhoneillustra = (props) => (
 )
 
 export default SvgPhoneillustra
+

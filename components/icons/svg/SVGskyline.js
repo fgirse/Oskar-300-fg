@@ -44,3 +44,4 @@ const SvgSkyline = (props) => (
 )
 
 export default SvgSkyline
+

@@ -1,7 +1,6 @@
-/* eslint-disable prettier/prettier */
 import { useState } from 'react'
 import Link from './Link'
-import headerNavLinks from '/data/headerNavLinks'
+import headerNavLinks from '@/data/headerNavLinks'
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
@@ -19,10 +18,10 @@ const MobileNav = () => {
   }
 
   return (
-    <div className="lg:hidden">
+    <div className="sm:hidden">
       <button
         type="button"
-        className="w-8 h-8 py-1 ml-1 mr-5 rounded"
+        className="w-8 h-8 py-1 ml-1 mr-1 rounded"
         aria-label="Toggle Menu"
         onClick={onToggleNav}
       >
@@ -60,13 +59,10 @@ const MobileNav = () => {
         ></button>
         <nav className="fixed h-full mt-8">
           {headerNavLinks.map((link) => (
-            <div
-              key={link.title}
-              className="w-screen border-b border-slate-800 shadow-slate-200-xl hover:bg-yellow-600 px-12 py-4 "
-            >
+            <div key={link.title} className="px-12 py-4 ">
               <Link
                 href={link.href}
-                className="text-2xl font-bold w-full tracking-widest font-sans text-slate-50 hover:text-gray-800 dark:text-gray-100"
+                className="text-2xl font-bold w-screen tracking-widest text-gray-300 hover:bg-yellow-600   hover:text-red-800 dark:text-gray-100"
                 onClick={onToggleNav}
               >
                 {link.title}

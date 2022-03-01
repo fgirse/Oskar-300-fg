@@ -36,3 +36,4 @@ const SvgScFreiburgLogo = (props) => (
 )
 
 export default SvgScFreiburgLogo
+
